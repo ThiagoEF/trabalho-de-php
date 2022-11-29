@@ -32,13 +32,13 @@ li img{
     border-radius: 20px;
     margin-bottom: 10px;
     margin-top: -12px;
-    margin-left: 170px;
+    margin-left: 2.5%;
 }
 /*
     AJEITAR: 98px
 */
 img:hover{
-    margin-left: 168px;
+    margin-left: 2.3%;
 }
 
 .text a:hover {
@@ -48,7 +48,7 @@ img:hover{
 
 header{
     background-image: url("../image/background-menu.webp");
-    background-size: auto;
+
 }
 header{
     position: fixed;
@@ -65,7 +65,7 @@ li img{
     margin-bottom: 20px;
 }
 #home{
-    margin-left: 10%;
+    margin-left: 7.3%;
     margin-right: 7.5%;
 }
 #login-text{
@@ -78,11 +78,11 @@ li img{
 }
 #about-us{
     margin-left: 7.5%;
-    margin-right: 5%;
+    margin-right: 7.5%;
 }
 li{
     float: left;
-    margin: 15px 0px 20px 0px;
+    margin: 1% 0 1% 0;
     font-size: larger;
     text-decoration: none;
     border-radius: 3px;
@@ -104,7 +104,7 @@ input{
 #button-login{
     border: 1px solid rgb(20, 167, 252);
     font-size: 20px;
-    margin-left: 60px;
+    margin-left: 7%;
     width: 100px;
     color: rgb(20, 167, 252);
     cursor: pointer;
@@ -129,22 +129,25 @@ input{
     font-family: cursive;
 }
 form{
-    margin: 0px 900px 0px 750px;
+    margin: 0% 7.5% 0% 36%;
     background-color:#ff65a3;
     padding: 10px 27px 25px 20px;
     width: 400px;
     height: 400px;
-    font-family: cursive;
+    font-family: cursive;  
 }
 #h2{
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 10px;
     font-size: 35px;
 }
 #login{
     margin-top: 10%;
     margin-bottom: 108px;
+    text-align: center;
+    padding-left: 20px;
+
 }
 
 table td,th{
@@ -178,7 +181,7 @@ table{
     height: 400px;
     float: right;
     margin-top: 33px;
-    margin-right: 550px;
+    margin-right: 20%;
     padding: 1px 20px 50px 20px;
 }
 .text-box{
@@ -187,7 +190,7 @@ table{
 }
 #text-box-right{
     background-color: #fff740;
-    margin-left: 550px;
+    margin-left: 20%;
     width: 400px;
     height: 400px;
     padding: 1px 20px 23px 20px;
@@ -223,17 +226,18 @@ body{
 }
 .sticker-login{
     position: absolute;
-    top: 165px;
-    left: 810px;
+    top: 17%;
+    left: 40.5%;
     color: #ffffff;
     background-color: #ffffff;
     width: 250px;
-    height: 50px;
+    height: 40px;
     opacity: 0.3;
+
 }
 .sticker-content-1{
     position: absolute;
-    left: 620px;
+    left: 25%;
     top: 110px;
     color: #ffffff;
     background-color: #ffffff;
@@ -243,7 +247,7 @@ body{
 }
 .sticker-content-2{
     position: absolute;
-    left: 1040px;
+    left: 60%;
     top: 105px;
     color: #ffffff;
     background-color: #ffffff;
@@ -253,7 +257,7 @@ body{
 }
 .sticker-aboutus{
     position: absolute;
-    left: 750px;
+    left: 40%;
     top: 120px;
     color: #ffffff;
     background-color: #ffffff;

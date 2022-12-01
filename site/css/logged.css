@@ -1,0 +1,8 @@
+.admin{
+    height: auto;
+    width: auto;
+    border-radius: 0px;
+}
+.admin:hover{
+    border-radius: -40px;
+}

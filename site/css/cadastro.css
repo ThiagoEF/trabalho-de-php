@@ -1,0 +1,58 @@
+.cadastro{
+    margin-top: 9%;
+    padding-left: 15px;
+}
+.sticker-cadas{
+    position: absolute;
+    top: 19%;
+    left: 40.5%;
+    color: #ffffff;
+    background-color: #ffffff;
+    width: 260px;
+    height: 40px;
+    opacity: 0.3;
+}
+#h2-cadas{
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+.input-cadas{
+    margin-left: 19%;
+}
+.button-cadas{
+    border: 1px solid rgb(20, 167, 252);
+    font-size: 20px;
+    margin-left: 38%;
+    width: 100px;
+    color: rgb(20, 167, 252);
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 2px 0px 2px 0px;
+    border-bottom: 4px solid rgb(13, 110, 167);
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: cursive;
+}
+.button-cadas:hover{
+    background-color: rgb(218, 218, 218); 
+}
+.button-cadas:active{
+    border-bottom: 1px solid rgb(20, 167, 252);
+    margin-top: 20px;
+    transition: 0.1s;
+    margin-bottom: -10px;
+}
+#cadastro-message{
+    position: absolute;
+    top: 19%;
+    left: 40.5%;
+    font-size: 20px;
+    background-color: #ffffff;
+    width: fit-content;
+    height: 40px;
+
+    padding-left: 0;
+    opacity: 50%;
+}

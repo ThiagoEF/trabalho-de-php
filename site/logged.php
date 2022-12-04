@@ -1,4 +1,8 @@
 <?php
+setcookie('cadastro');
+?>
+
+<?php
 
 require_once("config.inc.php");
 
@@ -17,7 +21,7 @@ $d5 = @mysqli_fetch_array($data5);
 <div class="message_table">
     <table>
         <tr>
-            <th>
+            <th id="idtable">
                 <p><b>id</b></p>
             </th>
             <th>
@@ -34,7 +38,7 @@ $d5 = @mysqli_fetch_array($data5);
             </th>
         </tr>
         <tr>
-            <td>
+            <td class="td">
                 <?php  
                         if ($id = $d1['id']){
                             echo "<p>$id</p>";
@@ -43,7 +47,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                 ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($name = $d1['nome']){
                             echo "<p>$name</p>";
@@ -52,7 +56,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($title = $d1['title']){
                             echo "<p>$title</p>";
@@ -61,7 +65,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php  
                         if ($text = $d1['texto']){
                             echo str_replace(array("\r\n", "\n", "\r"), "<br>", $text);
@@ -70,22 +74,18 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td rowspan="5">
+            <td rowspan="5" id="logged">
                     <form class="admin" action="edit.php" method="post">
-                        <label for="idedit">Id: </label><br>
-                        <input type="number" name="idedit">
-                        <label for="name">Nome: </label><br>
-                        <input type="text" name="name" required>
-                        <label for="title">Title: </label><br>
-                        <input type="text" name="title" required>
-                        <label for="text">Texto: </label><br>
-                        <textarea name="text" cols="30" rows="10" required></textarea>
-                        <button id="edit">Edit</button>
+                        <input type="number" placeholder="ID" required name="idedit"><br>
+                        <input type="text" placeholder="Name" required name="name" required><br>
+                        <input type="text" placeholder="Title" required name="title" required><br>
+                        <textarea id="textarea"name="text" required placeholder="Text" cols="30" rows="5" required></textarea><br>
+                        <button id="button-logged">Edit</button>
                     </form>
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="td">
                 <?php  
                         if ($id = $d2['id']){
                             echo "<p>$id</p>";
@@ -94,7 +94,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                 ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($name = $d2['nome']){
                             echo "<p>$name</p>";
@@ -103,7 +103,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($title = $d2['title']){
                             echo "<p>$title</p>";
@@ -112,7 +112,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php  
                         if ($text = $d2['texto']){
                             echo str_replace(array("\r\n", "\n", "\r"), "<br>", $text);
@@ -123,7 +123,7 @@ $d5 = @mysqli_fetch_array($data5);
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="td">
                 <?php  
                         if ($id = $d3['id']){
                             echo "<p>$id</p>";
@@ -132,7 +132,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                 ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($name = $d3['nome']){
                             echo "<p>$name</p>";
@@ -141,7 +141,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($title = $d3['title']){
                             echo "<p>$title</p>";
@@ -150,7 +150,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php  
                         if ($text = $d3['texto']){
                             echo str_replace(array("\r\n", "\n", "\r"), "<br>", $text);
@@ -161,7 +161,7 @@ $d5 = @mysqli_fetch_array($data5);
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="td">
                 <?php  
                         if ($id = $d4['id']){
                             echo "<p>$id</p>";
@@ -170,7 +170,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                 ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($name = $d4['nome']){
                             echo "<p>$name</p>";
@@ -179,7 +179,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($title = $d4['title']){
                             echo "<p>$title</p>";
@@ -188,7 +188,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php  
                         if ($text = $d4['texto']){
                             echo str_replace(array("\r\n", "\n", "\r"), "<br>", $text);
@@ -199,7 +199,7 @@ $d5 = @mysqli_fetch_array($data5);
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="td">
                 <?php  
                         if ($id = $d5['id']){
                             echo "<p>$id</p>";
@@ -208,7 +208,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                 ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($name = $d5['nome']){
                             echo "<p>$name</p>";
@@ -217,7 +217,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php
                         if ($title = $d5['title']){
                             echo "<p>$title</p>";
@@ -226,7 +226,7 @@ $d5 = @mysqli_fetch_array($data5);
                         }
                     ?>
             </td>
-            <td>
+            <td class="td">
                     <?php  
                         if ($text = $d5['texto']){
                             echo str_replace(array("\r\n", "\n", "\r"), "<br>", $text);

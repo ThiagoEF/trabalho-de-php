@@ -1,4 +1,8 @@
 <?php
+setcookie('cadastro');
+?>
+
+<?php
 require_once("config.inc.php");
 
 
@@ -37,6 +41,16 @@ $d5 = @mysqli_fetch_array($data5);
             echo str_replace(array("\r\n", "\n", "\r"), "<br>", $text);
         ?>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="message3">
         <?php
             $name = $d3['nome'];

@@ -1,13 +1,15 @@
 .we{
+    
     background-color: #fff740;
     width: 400px;
     height: 400px;
-    margin: 150px 20% 0 35%;
+    margin: 150px 30% 0 35%;
     font-family:cursive ;
+    text-align: center;
 }
 .sticker-aboutus{
     position: absolute;
-    left: 40%;
+    left: 39%;
     top: 120px;
     color: #ffffff;
     background-color: #ffffff;

@@ -8,10 +8,10 @@
     height: 40px;
     opacity: 0.3;
 }
-#button-login{
+.button-login{
     border: 1px solid rgb(20, 167, 252);
     font-size: 20px;
-    margin-left: 7%;
+    margin-left: 6%;
     width: 100px;
     color: rgb(20, 167, 252);
     cursor: pointer;
@@ -22,10 +22,10 @@
     border-radius: 5px;
     font-family: cursive;
 }
-#button-login:hover{
+.button-login:hover{
     background-color: rgb(218, 218, 218); 
 }
-#button-login:active{
+.button-login:active{
     border-bottom: 1px solid rgb(20, 167, 252);
     margin-top: 14px;
     transition: 0.1s;

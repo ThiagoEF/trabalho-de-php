@@ -11,6 +11,7 @@
     <link href="css/login.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
     <link href="css/main.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
     <link href="css/messages.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
+    <link href="css/cadastro.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
     
 </head>
 <body>
